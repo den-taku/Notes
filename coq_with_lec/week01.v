@@ -216,6 +216,11 @@ Fixpoint leb (n m : nat) : bool :=
         end
     end.
 
+Theorem plus_0_n : farall n:nat, 0 + n = n.
+
+Proof.
+    intros n. simpl. reflexivity. Qed.
+
 
 
 
