@@ -1,0 +1,62 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(72, 364)">
+<g>
+<rect fill="" height="309.09090909090907" stroke="black" width="120" x="60" y="-309.09090909090907"/>
+</g>
+<g>
+<rect fill="darkolivegreen" height="151.6295025728988" stroke="black" width="120" x="300" y="-151.6295025728988"/>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="120" x2="120" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="360" x2="360" y1="0" y2="10"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="480" y1="0" y2="0"/>
+<g>
+<text font-size="12" text-anchor="middle" x="120" y="20">
+1
+</text>
+<text font-size="12" text-anchor="middle" x="360" y="20">
+2
+</text>
+</g>
+<text font-size="12" text-anchor="middle" x="240" y="30">
+Experiment
+</text>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="0" y2="0"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-58.319039451114925" y2="-58.319039451114925"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-116.63807890222985" y2="-116.63807890222985"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-174.95711835334475" y2="-174.95711835334475"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-233.2761578044597" y2="-233.2761578044597"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-291.5951972555746" y2="-291.5951972555746"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
+<g>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="0">
+0
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-58.319039451114925">
+1
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-116.63807890222985">
+2
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-174.95711835334475">
+3
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-233.2761578044597">
+4
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-291.5951972555746">
+5
+</text>
+</g>
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -12 -170)" x="-12" y="-182">
+
+</text>
+</g>
+</g>
+</svg>
