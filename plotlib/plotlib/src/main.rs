@@ -1,12 +1,30 @@
-use plotlib::page::Page;
-use plotlib::repr::{Histogram, HistogramBins};
-use plotlib::view::ContinuousView;
+use std::collections::btree_map::BTreeMap;
 
 fn main() {
-    let data = [0.3, 0.5, 6.4, 5.3, 3.6, 3.6, 3.5, 7.5, 4.0];
-    let h = Histogram::from_slice(&data, HistogramBins::Count(10));
+    let mut data = Vec::new();
+    let message: &str = "This is a long message";
+    let mut count = BTreeMap::new();
 
-    let v = ContinuousView::new().add(h);
+    for c in message.trim().to_lowercase().chars() {
+        if c.is_alphabetic() {
+            *count.entry(c).or_insert(0) += 1
+        }
+    }
 
-    println!("{}", Page::single(&v).dimensions(60, 15).to_text().unwrap());
+    println!("Number of occurences per character");
+    for (ch, count) in &count {
+        println!("{:?}: {}", ch, count);
+        let count = *count as f64;
+        data.push(plotlib::repr::BarChart::new(count).label(ch.to_string()));
+    }
+    // Add data to the view
+    let v = data
+        .into_iter()
+        .fold(plotlib::view::CategoricalView::new(), |view, datum| {
+            view.add(datum)
+        });
+
+    plotlib::page::Page::single(&v)
+        .save("barchart.svg")
+        .expect("saving svg");
 }

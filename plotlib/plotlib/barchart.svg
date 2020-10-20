@@ -1,0 +1,121 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(72, 364)">
+<g>
+<rect fill="" height="154.54545454545453" stroke="black" width="21.818181818181817" x="10.909090909090908" y="-154.54545454545453"/>
+</g>
+<g>
+<rect fill="" height="154.54545454545453" stroke="black" width="21.818181818181817" x="54.54545454545455" y="-154.54545454545453"/>
+</g>
+<g>
+<rect fill="" height="154.54545454545453" stroke="black" width="21.818181818181817" x="98.18181818181817" y="-154.54545454545453"/>
+</g>
+<g>
+<rect fill="" height="77.27272727272727" stroke="black" width="21.818181818181817" x="141.8181818181818" y="-77.27272727272727"/>
+</g>
+<g>
+<rect fill="" height="154.54545454545453" stroke="black" width="21.818181818181817" x="185.45454545454544" y="-154.54545454545453"/>
+</g>
+<g>
+<rect fill="" height="77.27272727272727" stroke="black" width="21.818181818181817" x="229.09090909090907" y="-77.27272727272727"/>
+</g>
+<g>
+<rect fill="" height="77.27272727272727" stroke="black" width="21.818181818181817" x="272.7272727272727" y="-77.27272727272727"/>
+</g>
+<g>
+<rect fill="" height="77.27272727272727" stroke="black" width="21.818181818181817" x="316.3636363636363" y="-77.27272727272727"/>
+</g>
+<g>
+<rect fill="" height="77.27272727272727" stroke="black" width="21.818181818181817" x="359.99999999999994" y="-77.27272727272727"/>
+</g>
+<g>
+<rect fill="" height="309.09090909090907" stroke="black" width="21.818181818181817" x="403.63636363636357" y="-309.09090909090907"/>
+</g>
+<g>
+<rect fill="" height="77.27272727272727" stroke="black" width="21.818181818181817" x="447.2727272727272" y="-77.27272727272727"/>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="21.818181818181817" x2="21.818181818181817" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="65.45454545454545" x2="65.45454545454545" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="109.09090909090908" x2="109.09090909090908" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="152.72727272727272" x2="152.72727272727272" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="196.36363636363635" x2="196.36363636363635" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="239.99999999999997" x2="239.99999999999997" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="283.6363636363636" x2="283.6363636363636" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="327.27272727272725" x2="327.27272727272725" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="370.9090909090909" x2="370.9090909090909" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="414.5454545454545" x2="414.5454545454545" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="458.18181818181813" x2="458.18181818181813" y1="0" y2="10"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="480" y1="0" y2="0"/>
+<g>
+<text font-size="12" text-anchor="middle" x="21.818181818181817" y="20">
+a
+</text>
+<text font-size="12" text-anchor="middle" x="65.45454545454545" y="20">
+e
+</text>
+<text font-size="12" text-anchor="middle" x="109.09090909090908" y="20">
+g
+</text>
+<text font-size="12" text-anchor="middle" x="152.72727272727272" y="20">
+h
+</text>
+<text font-size="12" text-anchor="middle" x="196.36363636363635" y="20">
+i
+</text>
+<text font-size="12" text-anchor="middle" x="239.99999999999997" y="20">
+l
+</text>
+<text font-size="12" text-anchor="middle" x="283.6363636363636" y="20">
+m
+</text>
+<text font-size="12" text-anchor="middle" x="327.27272727272725" y="20">
+n
+</text>
+<text font-size="12" text-anchor="middle" x="370.9090909090909" y="20">
+o
+</text>
+<text font-size="12" text-anchor="middle" x="414.5454545454545" y="20">
+s
+</text>
+<text font-size="12" text-anchor="middle" x="458.18181818181813" y="20">
+t
+</text>
+</g>
+<text font-size="12" text-anchor="middle" x="240" y="30">
+
+</text>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="0" y2="0"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-77.27272727272727" y2="-77.27272727272727"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-154.54545454545453" y2="-154.54545454545453"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-231.8181818181818" y2="-231.8181818181818"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-309.09090909090907" y2="-309.09090909090907"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
+<g>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="0">
+0
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-77.27272727272727">
+1
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-154.54545454545453">
+2
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-231.8181818181818">
+3
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-309.09090909090907">
+4
+</text>
+</g>
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -12 -170)" x="-12" y="-182">
+
+</text>
+</g>
+</g>
+</svg>
