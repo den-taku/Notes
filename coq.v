@@ -28,3 +28,155 @@ Natation "x && y" := (andb x y).
 
 (* 型を調べる *)
 Check arg.
+
+(* 既存の型を使った型定義 *)
+Inductive type_name2 : Type :=
+    | ele1
+    | ele2
+    | ele3 (ele : type_name).
+
+(* パターンマッチのさせ方 *)
+match arg with
+| ele1 => exp1
+| ele2 => exp2
+| ele2 e => exp3
+end.
+
+(* 組 *)
+Inductive type_name : Type :=
+    | tuple_name (ele1 ele2 ele3 ele4 : type_name2).
+
+Check (tuple_name (ele1 ele2 ele3 ele4).
+    : type_name
+
+(* 自然数の定義 *)
+Inductive nat : Type :=
+    | O
+    | S (n: nat).
+
+(* 再帰関数の定義 *)
+Fixpoint function_name (arg:type_name) : value_type :=
+    match arg with
+    | ele1 => exp1
+    | ele2 => exp2
+    | ele3 (ele3')=> funtion_name ele3'
+    end.
+
+(* 定理 *)
+Theorem theorem_name : forall arg:type_name, exp.
+
+(* タクティック *)
+
+(* 式の計算 *)
+simpl. 
+
+(* =の両辺は等しい.よって題意は示された*)
+reflexivity. 
+
+(* 文脈への仮定の導入 *)
+(* 仮定は「文脈」contextに移動する *)
+intros hypothesis_syntax. 
+
+(* ならば *)
+hypothesis_exp -> proposition_exp
+(* intros H のように仮定を導入する *)
+
+(* 仮定による等式の書き換え *)
+(* すでに証明した定理も使える *)
+rewrite -> H.
+rewrite <- H.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
