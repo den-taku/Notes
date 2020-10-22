@@ -1,3 +1,5 @@
+(* Coq syntax *)
+
 (* handout1 *)
 
 (* 型を定義*)
