@@ -25,3 +25,6 @@ Proof. (* such as *) simpl. reflexivity. (* *) Qed.
 (* 構文解析時に展開されるマクロ *)
 (* such as *)
 Natation "x && y" := (andb x y).
+
+(* 型を調べる *)
+Check arg.
