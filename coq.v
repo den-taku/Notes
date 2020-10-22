@@ -1,3 +1,5 @@
+(* handout1 *)
+
 (* 型を定義*)
 Inductive type_name : Type :=
     | ele1
@@ -86,8 +88,21 @@ hypothesis_exp -> proposition_exp
 rewrite -> H.
 rewrite <- H.
 
+(* 場合分け *)
+(* -, +, *はbulletと呼ばれる *)
+destruct arg as [arg_ele1|arg_ele2|arg_ele3] eqn: Eqn_name.
+ - (* tactics *)
+ - destruct arg2 as [|] eqn: Eqn_name2.
+   + (* tactics *)
+   + destruct qrg3 as [|] eqn: Eqn_name3.
+    * (* tactics *)
+    * (* tactics *)
+ - (* tactics *)
 
+(* introsとdestructは組み合わせることができる*)
+intros x. destruct x as [|y]. => intros [|y].
 
+(* handout2 *)
 
 
 
