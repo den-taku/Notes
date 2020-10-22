@@ -104,6 +104,20 @@ intros x. destruct x as [|y]. => intros [|y].
 
 (* handout2 *)
 
+(* 別ファイルの定義・定理を読み込める *)
+(* 詳しくはIntroduction.vの冒頭を読むべし *)
+
+(* 数学的帰納法を使った証明 *)
+(* Induction Hypothesisを仮定して示す *)
+(* IHarg'が帰納法の仮定につける名前 *)
+induction arg as [|arg' IHarg'].
+
+(* サブ定理(補題) *)
+assert (H_name: hypothesis_exp). { (* tactics *) }
+assert (hypothesis_exp) as H_name. { (* tactics *) }
+
+(* 証明の置き換え *)
+replace (A) with (B).
 
 
 
