@@ -34,5 +34,5 @@ fn main() {
         }
         println!("solution: {}", x);
     }
-    fg.show();
+    let _ = fg.show();
 }
