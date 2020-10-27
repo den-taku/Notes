@@ -15,7 +15,7 @@ fn main() {
     }
     let mut fg = Figure::new();
     {
-        let axec = fg.axes2d();
+        let axec = fg.axes2d().set_y_log(Some(10.0));
         axec.set_x_axis(true, &[]);
         axec.set_x_range(Fix(0.0), Fix(5.0));
         axec.set_y_range(Fix(-5.0), Fix(30.0));
