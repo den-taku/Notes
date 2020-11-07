@@ -1,3 +1,10 @@
+use std::cell::RefCell;
+
+fn ref_refcell(refed: i32) {
+    println!("Ok! : {}", refed);
+}
+
 fn main() {
-    println!("Hello, world!");
+    let refed = RefCell::new(56i32);
+    ref_refcell(refed);
 }
