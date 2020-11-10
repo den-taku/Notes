@@ -1,8 +1,10 @@
 fn main() {
-    let hoge1 = [true; 16384];
-    let hoge2 = [false; 16834];
+    let hoge1 = [[true; 16384]; 14];
+    let hoge2 = [[false; 16834]; 14];
     for i in 0..16384 {
-        println!("{}", hoge1[i]);
-        println!("{}", hoge2[i]);
+        for j in 0..14 {
+            println!("{}", hoge1[j][i]);
+            println!("{}", hoge2[j][i]);
+        }
     }
 }
