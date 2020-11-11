@@ -121,6 +121,52 @@ assert (hypothesis_exp) as H_name. { (* tactics *) }
 (* 証明の置き換え *)
 replace (A) with (B).
 
+(* handout03 *)
+
+(* 自然数のペア *)
+Inductive natprod : Type :=
+| pair (n1 n2 : nat).
+
+Notation "( x , y )" := (pair x y).
+
+(* リスト *)
+Inductive natlist : Type :=
+| nil
+| cons (n: nat) (l: natlist).
+
+cons -> n :: l
+[n1; n2; n3]
+
+(* 数学的帰納法を自然数の場合と同様に使える *)
+
+(* 部分写像 *)
+Inductive id : Type :=
+| Id (n: nat).
+
+Difinition eqb_id (x1 x2 : id) :=
+    match x1, x2 with
+    |Id n1, Id n2 => n1 =? n2
+    end.
+
+Inductive partial_map : Type :=
+    | empty
+    | record (i : id) (v : nat) (m : partial_map).
+
+(* 写像の更新 *)
+Difinition update (d: partial_map)
+                  (x : id) (value : nat)
+                  : partial_map :=
+    record x value d.
+
+(* 線形探索 *)
+Fixpoint find (x : id) (d: partial_map)
+    : natoption :=
+    match d with
+    | empty         => None
+    | record y v d' => if eqb_id x y
+                       then Some v
+                       else find x d'
+    end.
 
 
 
