@@ -168,10 +168,45 @@ Fixpoint find (x : id) (d: partial_map)
                        else find x d'
     end.
 
+(* handout4 *)
 
+(* 型パラメータを引数にとるリスト *)
+(* 多相的型定義 *)
+Inductive list (X:Type) : Type :=
+    | nil
+    | cons (x : X) (l : list X).
 
+nil nat
+cons nat 3 (nil nat)
 
+X : Type で抽象化
 
+(* 引数の暗黙化 *)
+
+Arguments nil {X}.
+Arguments cons {X} _ _.
+
+(* 関数引数の暗黙化 *)
+
+fixpoint repeat''' {X : Type} (x : X) (count : nat) : list X :=
+    match count with
+    | O        => nil
+    | S count' => cons x (repeat''' x count')
+    end.
+
+(* 暗黙化を無効化するオペレータ@ *)
+
+Difinition mynil := @nil nat.
+
+(* 証明における型の全称量化 *)
+
+forall X:Type
+
+(* 高階関数も扱える *)
+
+(* 匿名関数 *)
+
+fun x => expression.
 
 
 
