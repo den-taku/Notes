@@ -244,6 +244,9 @@ forall (A B : Type) (f: A -> B) (x y : A),
 tactics in H.
 (* Hに対してtacticsを使う *)
 
+generalize dependent
+(* 文脈で仮定した変数を再び全少量化する *)
+
 
 
 
