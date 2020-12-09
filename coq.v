@@ -226,6 +226,23 @@ apply with
 transitivity
 (* 推移律に関してはこれでも良い *)
 
+injection H as Hnm.
+(* S m = S n -> n = m *)
+(* HをinjectしてHnmとする *)
+(* 名前をつけないとゴール中に仮定としてつく *)
+
+discriminate
+(* 矛盾を指摘してサブゴールを解消する *)
+(* 爆発則 *)
+
+Theorem f_equal :
+forall (A B : Type) (f: A -> B) (x y : A),
+    x = y -> f x = f y.
+
+(* 仮定に対してtacticsを使う *)
+
+tactics in H.
+(* Hに対してtacticsを使う *)
 
 
 
