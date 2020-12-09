@@ -250,7 +250,8 @@ generalize dependent
 unfold D.
 (* 定義を展開する *)
 
-
+destruct (exp) eqn: H.
+(* expがtrueの時とfalseの時で場合分け *)
 
 
 
