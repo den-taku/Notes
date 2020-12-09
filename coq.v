@@ -208,7 +208,23 @@ forall X:Type
 
 fun x => expression.
 
+(* handout5 *)
 
+(* tactics *)
+
+apply
+(* ゴールと仮定が等しければ終了 *)
+(* 適用する仮定が仮定を持つならその過程まで遡る *)
+(* 全称量子化されたものは具体化する *)
+
+symmetry
+(* 等式の左右が入れ替わる *)
+
+apply with
+(* 具体化できない中間の要素を処理系に知らせる *)
+
+transitivity
+(* 推移律に関してはこれでも良い *)
 
 
 
