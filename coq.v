@@ -247,6 +247,9 @@ tactics in H.
 generalize dependent
 (* 文脈で仮定した変数を再び全少量化する *)
 
+unfold D.
+(* 定義を展開する *)
+
 
 
 
