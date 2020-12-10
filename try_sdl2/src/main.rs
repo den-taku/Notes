@@ -22,9 +22,6 @@ fn main() -> Result<(), String> {
     let mut canvas = window.into_canvas().build()
         .expect("could not make a canvas");
  
-    // canvas.set_draw_color(Color::RGB(255, 255, 255));
-    // canvas.clear();
-    // canvas.present();
     let mut event_pump = sdl_context.event_pump()?;
     let mut i = 0;
     'running: loop {
