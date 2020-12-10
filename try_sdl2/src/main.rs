@@ -1,8 +1,8 @@
 use sdl2::pixels::Color;
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
-use std::time::Duration;
 use sdl2::render::WindowCanvas;
+use std::time::Duration;
 
 fn render(canvas: &mut WindowCanvas, color: Color) {
     canvas.set_draw_color(color);
