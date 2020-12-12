@@ -2,7 +2,7 @@ use sdl2::pixels::Color;
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
 use sdl2::render::WindowCanvas;
-use sdl2::rect::{Point, Rect};
+use sdl2::rect::Rect;
 use std::time::Duration;
 use rand;
 
@@ -37,21 +37,21 @@ fn display_rectangle(renderer: &mut WindowCanvas, canvas_width: &u32, canvas_hei
     let square_definition12 = Rect::new(0, 12, *canvas_width, *canvas_height);
     let square_definition13 = Rect::new(0, 13, *canvas_width, *canvas_height);
     let square_definition14 = Rect::new(0, 14, *canvas_width, *canvas_height);
-    renderer.fill_rect(square_definition0);
-    renderer.fill_rect(square_definition1);
-    renderer.fill_rect(square_definition2);
-    renderer.fill_rect(square_definition3);
-    renderer.fill_rect(square_definition4);
-    renderer.fill_rect(square_definition5);
-    renderer.fill_rect(square_definition6);
-    renderer.fill_rect(square_definition7);
-    renderer.fill_rect(square_definition8);
-    renderer.fill_rect(square_definition9);
-    renderer.fill_rect(square_definition10);
-    renderer.fill_rect(square_definition11);
-    renderer.fill_rect(square_definition12);
-    renderer.fill_rect(square_definition13);
-    renderer.fill_rect(square_definition14);
+    let _ = renderer.fill_rect(square_definition0);
+    let _ = renderer.fill_rect(square_definition1);
+    let _ = renderer.fill_rect(square_definition2);
+    let _ = renderer.fill_rect(square_definition3);
+    let _ = renderer.fill_rect(square_definition4);
+    let _ = renderer.fill_rect(square_definition5);
+    let _ = renderer.fill_rect(square_definition6);
+    let _ = renderer.fill_rect(square_definition7);
+    let _ = renderer.fill_rect(square_definition8);
+    let _ = renderer.fill_rect(square_definition9);
+    let _ = renderer.fill_rect(square_definition10);
+    let _ = renderer.fill_rect(square_definition11);
+    let _ = renderer.fill_rect(square_definition12);
+    let _ = renderer.fill_rect(square_definition13);
+    let _ = renderer.fill_rect(square_definition14);
 
     renderer.present();
 }
