@@ -7,23 +7,32 @@ use rand;
 
 struct CanvasManager {
     event_pump: EventPump,
-    canvas: WindowCanvas
+    canvas1: WindowCanvas,
+    canvas2: WindowCanvas
 }
 
 impl CanvasManager {
     fn new() -> Self {
         let sdl_context = sdl2::init().unwrap();
-        let video_subsystem = sdl_context.video().unwrap();
-        let window = video_subsystem.window("Screen", 512, 256)
+        let video_subsystem1 = sdl_context.video().unwrap();
+        let video_subsystem2 = sdl_context.video().unwrap();
+        let window1 = video_subsystem1.window("Screen", 512, 256)
             .position_centered()
             .build()
             .expect("could not initialize video subsystem");
-        let canvas = window.into_canvas().build()
+        let window2 = video_subsystem2.window("Screen", 512, 256)
+            .position_centered()
+            .build()
+            .expect("could not initialize video subsystem");
+        let canvas1 = window1.into_canvas().build()
+            .expect("could not make a canvas");
+        let canvas2 = window2.into_canvas().build()
             .expect("could not make a canvas");
         let event_pump = sdl_context.event_pump().unwrap();
         CanvasManager {
             event_pump,
-            canvas
+            canvas1,
+            canvas2
         }
     }
 
@@ -32,21 +41,28 @@ impl CanvasManager {
         let green: u8 = rand::random();
         let blue: u8 = rand::random();
 
-        self.canvas.clear();
+        self.canvas1.clear();
+        self.canvas2.clear();
 
         let drawing_color = Color::RGB(red, green, blue);
-        self.canvas.set_draw_color(drawing_color);
+        self.canvas1.set_draw_color(drawing_color);
+        self.canvas2.set_draw_color(drawing_color);
 
         let square_definition = Rect::new(0, 0, *rect_width, *rect_height);
-        let _ = self.canvas.fill_rect(square_definition);
+        let _ = self.canvas1.fill_rect(square_definition);
+        let _ = self.canvas2.fill_rect(square_definition);
 
-        self.canvas.present();
+        self.canvas1.present();
+        self.canvas2.present();
     }
 
     fn render(&mut self, color: Color) {
-        self.canvas.set_draw_color(color);
-        self.canvas.clear();
-        self.canvas.present();
+        self.canvas1.set_draw_color(color);
+        self.canvas2.set_draw_color(color);
+        self.canvas1.clear();
+        self.canvas2.clear();
+        self.canvas1.present();
+        self.canvas2.present();
     }
 }
 
