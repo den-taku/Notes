@@ -36,10 +36,13 @@ impl CanvasManager {
         }
     }
 
-    fn drawing_rectangle(&mut self, rect_width: &u32, rect_height: &u32) {
-        let red: u8 = rand::random();
-        let green: u8 = rand::random();
-        let blue: u8 = rand::random();
+    fn drawing_rectangle(&mut self, x: &i32, y: &i32) {
+        // let red: u8 = rand::random();
+        // let green: u8 = rand::random();
+        // let blue: u8 = rand::random();
+        let red = 0u8;
+        let green = 0u8;
+        let blue = 0u8;
 
         self.canvas1.clear();
         self.canvas2.clear();
@@ -48,7 +51,7 @@ impl CanvasManager {
         self.canvas1.set_draw_color(drawing_color);
         self.canvas2.set_draw_color(drawing_color);
 
-        let square_definition = Rect::new(0, 0, *rect_width, *rect_height);
+        let square_definition = Rect::new(*x, *y, 1, 1);
         let _ = self.canvas1.fill_rect(square_definition);
         let _ = self.canvas2.fill_rect(square_definition);
 
@@ -68,7 +71,6 @@ impl CanvasManager {
 
 fn main() {
     let mut canvas = CanvasManager::new();
-    let mut i = 0;
     'running: loop {
         for event in canvas.event_pump.poll_iter() {
             match event {
@@ -78,8 +80,7 @@ fn main() {
                 _ => {}
             }
         }
-        i = (i + 1) % 255;
-        canvas.render(Color::RGB(i, 64, 255 - i));
+        canvas.render(Color::RGB(255, 255, 255));
         canvas.drawing_rectangle(&30, &30)
     }
 }

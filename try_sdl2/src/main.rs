@@ -13,30 +13,33 @@ fn render(canvas: &mut WindowCanvas, color: Color) {
 }
 
 fn display_rectangle(renderer: &mut WindowCanvas, canvas_width: &u32, canvas_height: &u32) {
-    let red: u8 = rand::random();
-    let green: u8 = rand::random();
-    let blue: u8 = rand::random();
+    // let red: u8 = rand::random();
+    // let green: u8 = rand::random();
+    // let blue: u8 = rand::random();
 
+    let red: u8 = 0;
+    let green: u8 = 0;  
+    let blue: u8 = 0;
+    
     renderer.clear();
-
     let drawing_color = Color::RGB(red, green, blue);
     renderer.set_draw_color(drawing_color);
 
     let square_definition0 = Rect::new(0, 0, *canvas_width, *canvas_height);
-    let square_definition1 = Rect::new(0, 1, *canvas_width, *canvas_height);
+    let square_definition1 = Rect::new(9, 10, *canvas_width, *canvas_height);
     let square_definition2 = Rect::new(0, 2, *canvas_width, *canvas_height);
     let square_definition3 = Rect::new(0, 3, *canvas_width, *canvas_height);
     let square_definition4 = Rect::new(0, 4, *canvas_width, *canvas_height);
     let square_definition5 = Rect::new(0, 5, *canvas_width, *canvas_height);
     let square_definition6 = Rect::new(0, 6, *canvas_width, *canvas_height);
     let square_definition7 = Rect::new(0, 7, *canvas_width, *canvas_height);
-    let square_definition8 = Rect::new(0, 8, *canvas_width, *canvas_height);
-    let square_definition9 = Rect::new(0, 9, *canvas_width, *canvas_height);
-    let square_definition10 = Rect::new(0, 10, *canvas_width, *canvas_height);
-    let square_definition11 = Rect::new(0, 11, *canvas_width, *canvas_height);
-    let square_definition12 = Rect::new(0, 12, *canvas_width, *canvas_height);
-    let square_definition13 = Rect::new(0, 13, *canvas_width, *canvas_height);
-    let square_definition14 = Rect::new(0, 14, *canvas_width, *canvas_height);
+    let square_definition8 = Rect::new(30, 8, *canvas_width, *canvas_height);
+    let square_definition9 = Rect::new(60, 190, *canvas_width, *canvas_height);
+    let square_definition10 = Rect::new(30, 100, *canvas_width, *canvas_height);
+    let square_definition11 = Rect::new(300, 110, *canvas_width, *canvas_height);
+    let square_definition12 = Rect::new(500, 52, *canvas_width, *canvas_height);
+    let square_definition13 = Rect::new(190, 63, *canvas_width, *canvas_height);
+    let square_definition14 = Rect::new(200, 14, *canvas_width, *canvas_height);
     let _ = renderer.fill_rect(square_definition0);
     let _ = renderer.fill_rect(square_definition1);
     let _ = renderer.fill_rect(square_definition2);
@@ -69,7 +72,7 @@ fn main() -> Result<(), String> {
         .expect("could not make a canvas");
  
     let mut event_pump = sdl_context.event_pump()?;
-    let mut i = 0;
+    // let mut i = 0;
     'running: loop {
         // Handle events
         for event in event_pump.poll_iter() {
@@ -83,11 +86,11 @@ fn main() -> Result<(), String> {
         }
 
         // Update
-        i = (i + 1) % 255;
+        // i = (i + 1) % 255;
 
         // Render
-        render(&mut canvas, Color::RGB(i, 64, 255 - i));
-        display_rectangle(&mut canvas, &100, &1);
+        render(&mut canvas, Color::RGB(255, 255, 255));
+        display_rectangle(&mut canvas, &100, &10);
 
         // Try
         // let mut points = Vec::new();
