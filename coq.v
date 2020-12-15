@@ -287,6 +287,13 @@ exists n.
 (* tactics *)
 exists 2.
 
+(* 再帰的命題 *)
+Fixpoint In {A : Type} (x : A) (l : list A) : Prop :=
+    match l with
+    | [] => False
+    | x' :: l' => x' = x \/ In x l'
+    end.
+
 
 
 
