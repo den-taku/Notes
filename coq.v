@@ -278,7 +278,14 @@ destruct hoge.
 (* 爆発則を適応するtactics *)
 exfalso.
 
+(* 同値関係 *)
+iff
 
+(* 存在量化 *)
+exists n.
+
+(* tactics *)
+exists 2.
 
 
 
