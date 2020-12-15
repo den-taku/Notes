@@ -253,7 +253,30 @@ unfold D.
 destruct (exp) eqn: H.
 (* expがtrueの時とfalseの時で場合分け *)
 
+(* handout6 *)
 
+(* 命題の型 *)
+Prop
+
+(* conjunction *)
+/\
+
+(* ゴールを分けるtactics *)
+split
+
+(* disjunction *)
+\/
+
+(* tactics *)
+left
+right
+
+(* 仮定にFalseが出てきたとき *)
+(* 爆発則より *)
+destruct hoge.
+
+(* 爆発則を適応するtactics *)
+exfalso.
 
 
 
