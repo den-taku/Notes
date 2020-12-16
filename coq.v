@@ -294,6 +294,17 @@ Fixpoint In {A : Type} (x : A) (l : list A) : Prop :=
     | x' :: l' => x' = x \/ In x l'
     end.
 
+(* 証明の型は命題 *)
+
+(* 証明なしで命題を追加する *)
+
+Axiom
+
+(* 使った公理を示す *)
+
+Print Assamptions
+
+(* Coqでは排中律を示せない(構成的論理) *)
 
 
 
