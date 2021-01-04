@@ -306,7 +306,20 @@ Print Assamptions
 
 (* Coqでは排中律を示せない(構成的論理) *)
 
+(* handout7 *)
 
+(* 帰納的定義は規則について閉じ、最小性を有す *)
+
+Inducive ev : nat -> Prop :=
+| ev_0 : ev 0
+|ev_SS (n: nat) (H : ev n) : ev (S (S n)).
+
+(* ev_0などはapplyできる *)
+
+(* tactic inversion *)
+(* 定理を遡る *)
+(* destructよりも強力 *)
+inversinon E as [|].
 
 
 
