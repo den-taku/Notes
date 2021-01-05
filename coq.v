@@ -321,6 +321,8 @@ Inducive ev : nat -> Prop :=
 (* destructよりも強力 *)
 inversinon E as [|].
 
+(* 導出についての帰納法 *)
+(* 証明オブジェクトに対するinductionをすれば良い *)
 
 
 
