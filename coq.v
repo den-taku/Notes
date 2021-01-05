@@ -310,7 +310,7 @@ Print Assamptions
 
 (* 帰納的定義は規則について閉じ、最小性を有す *)
 
-Inducive ev : nat -> Prop :=
+Inductive ev : nat -> Prop :=
 | ev_0 : ev 0
 |ev_SS (n: nat) (H : ev n) : ev (S (S n)).
 
