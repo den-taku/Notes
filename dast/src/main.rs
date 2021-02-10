@@ -27,4 +27,5 @@ fn main() {
     let a = Complex { re: 4.0, im: 5.0 };
     let b = Complex { re: 9.0, im: -9.0 };
     println!("{} + {} = {}", a, b, a + b);
+    println!("{}", 3 != 0);
 }
