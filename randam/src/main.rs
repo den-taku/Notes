@@ -1,5 +1,11 @@
 use rand::Rng;
 
+enum Lab {
+    Sato,
+    Hashimoto,
+    Nakamura,
+}
+
 fn main() {
     let mut rng = rand::thread_rng();
 
