@@ -65,6 +65,8 @@ int main() {
         std::make_tuple(false, Morikura),
     };
 
+    Dice();
+
     for (i = 1; i < 8; ) {
         int choice = Dice();
         if (Decide(choices, choice)) {
