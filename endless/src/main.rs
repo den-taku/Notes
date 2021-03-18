@@ -4,5 +4,4 @@ fn f(x: i32) -> i32 {
 
 fn main() {
     f(4);
-    loop{}
 }
