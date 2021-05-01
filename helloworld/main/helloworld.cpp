@@ -1,8 +1,9 @@
 #include <iostream>
 #include "hellogreet.h"
+#include "lib/hellotime.h"
 
 int main(void) {
-    std::cout << "Hello World!!" << std::endl;
     greet();
+    time();
     return 0;
 }
